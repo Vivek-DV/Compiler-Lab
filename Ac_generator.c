@@ -102,3 +102,30 @@ int main(){
 		printf("%d : HLT\n",addr);
 	}
 }
+
+
+
+Output
+------
+student@admincse-OptiPlex-5055-Ryzen-CPU:~/Desktop/Vivek$ ./a.out 
+Enter the expression
+a+b*c
+Enter the starting address:
+1000
+Postfix expression:abc*+
+1000 : MOV A,a
+1001 : PUSH A
+1002 : MOV A,b
+1003 : PUSH A
+1004 : MOV A,c
+1005 : PUSH A
+1006 : POP B
+1007 : POP A
+1008 : MUL B
+1009 : PUSH A
+1010 : POP B
+1011 : POP A
+1012 : ADD B
+1013 : PUSH A
+1014 : POP A
+1015 : HLT
