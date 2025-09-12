@@ -136,3 +136,33 @@ int main(){
 	quadruple();
 	triple();
 }
+
+
+Output
+-----
+
+student@admincse-OptiPlex-5055-Ryzen-CPU:~/Desktop/Vivek$ ./a.out 
+Enter the expression
+a+b*c-d/e
+Postfix expression:abc*+de/-
+
+Three Address Code
+t1=b*c
+t2=a+t1
+t3=d/e
+t4=t2-t3
+
+Quadruple
+op	arg1	arg2	res
+*	b	c	t1
++	a	t1	t2
+/	d	e	t3
+-	t2	t3	t4
+
+Triple
+  	op	arg1	arg2
+(0)	*	b	c
+(1)	+	a	(0)
+(2)	/	d	e
+(3)	-	(1)	(2)
+
