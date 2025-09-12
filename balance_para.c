@@ -83,3 +83,13 @@ int main(int argc, char * argv[])
 	else
 		printf("Syntax Matched!\n");
 }
+
+
+
+Output
+------
+student@admincse-OptiPlex-5055-Ryzen-CPU:~/Desktop/Vivek$ ./a.out input.c 
+Error 9: Missing Open Parenthesis
+Syntax Matched!
+student@admincse-OptiPlex-5055-Ryzen-CPU:~/Desktop/Vivek$ ./a.out input.c 
+Syntax Matched!
